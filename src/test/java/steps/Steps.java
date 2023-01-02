@@ -11,6 +11,7 @@ public class Steps {
 
     private WebDriver driver;
 
+    @Given("User is on the Login page")
     @Given("User is on the Login page of the ParaBank app")
     public void user_is_on_the_login_page_of_the_para_bank_app() {
         driver = new EdgeDriver();

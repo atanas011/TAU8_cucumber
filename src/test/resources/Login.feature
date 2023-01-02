@@ -3,8 +3,15 @@ Feature: Login Functionality
   As a valid ParaBank client
   User wants to log in successfully
 
+  # run this...
   Scenario: Successful Login
     Given User is on the Login page of the ParaBank app
+    When User enters valid credentials
+    Then Overview page should be displayed
+
+  # ...or this
+  Scenario: Successful Login
+    Given User is on the Login page
     When User enters valid credentials
     Then Overview page should be displayed
 
