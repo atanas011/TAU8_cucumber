@@ -11,17 +11,16 @@ public class Steps {
 
     private WebDriver driver;
 
-    @Given("User is on the Login page")
     @Given("User is on the Login page of the ParaBank app")
     public void user_is_on_the_login_page_of_the_para_bank_app() {
         driver = new EdgeDriver();
         driver.get("https://parabank.parasoft.com/parabank/index.htm");
     }
 
-    @When("User enters valid credentials")
-    public void user_enters_valid_credentials() {
-        driver.findElement(By.name("username")).sendKeys("Ana");
-        driver.findElement(By.name("password")).sendKeys("123");
+    @When("User enters valid {string} and {string}")
+    public void user_enters_valid_credentials(String username, String password) {
+        driver.findElement(By.name("username")).sendKeys(username);
+        driver.findElement(By.name("password")).sendKeys(password);
         driver.findElement(By.name("username")).submit();
     }
 
