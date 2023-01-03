@@ -3,14 +3,11 @@ Feature: Login Functionality
   As a valid ParaBank client
   User wants to log in successfully
 
-  Scenario Outline: Successful Login
+  Scenario: Successful Login
     Given User is on the Login page of the ParaBank app
-    When User enters valid <username> and <password>
+    When User enters valid credentials
+      | Ana | 123 |
     Then Overview page should be displayed
-    Examples:
-      | username | password |
-      | "Ana"    | "123"    |
-      | "Pera"   | "456"    |
 
 # Ctrl + click on step description > go to step definition file
 # Run > Modify Run Config > Before launch > Build > "-" > "+" > Build Project > OK

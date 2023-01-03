@@ -33,7 +33,7 @@
         </dependency>
     </dependencies>
 
-<!-- This was auto-generated -->
+    <!-- This was auto-generated -->
     <build>
         <plugins>
             <plugin>
