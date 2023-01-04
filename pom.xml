@@ -15,7 +15,7 @@
     </properties>
 
     <dependencies>
-        <dependency>
+        <dependency> <!-- This could've also been added as plugin with additional tags -->
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
             <version>5.7.4</version>
