@@ -9,5 +9,5 @@ import org.junit.runner.RunWith;
         "pretty", "html:target/site/cucumber-pretty", "json:target/cucumber.json"})
 public class RunCucumberTests {
     // to run parallel tests:
-    // right toolbar > Maven > project > Lifecycle > test > Run
+    //   right toolbar > Maven > project > Lifecycle > test > Run...
 }
