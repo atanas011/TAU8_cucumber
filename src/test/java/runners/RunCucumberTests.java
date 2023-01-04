@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(glue = {"steps"}, features = "src/test/resources", plugin = {
-        "pretty", "html:target/site/cucumber-pretty", "json:target/cucumber.json"})
+        "pretty", "html:target/reports/report.html", "json:target/cucumber.json"})
 public class RunCucumberTests {
-    // to run parallel tests:
+    // to get an html report in target/reports:
     //   right toolbar > Maven > project > Lifecycle > test > Run...
 }
